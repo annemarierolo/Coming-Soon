@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    height: 65%;
+}
+
+.bgDesktop {
+    width: 100%;
+}
+
+.logo {
+    margin-block-start: 40px;
+    margin-block-end: 60px;
+}
+
+.left {
+    float: left;
+    width: 50%;
+    color: hsl(0, 36%, 70%);
+    margin-inline-start: 70px;
+}
+
+.info {
+    text-transform: uppercase;
+    line-height: 16px;
+    letter-spacing: 8px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#title1 {
+    font-weight: 300;
+}
+
+#title2,
+#title3 {
+    color: hsl(0, 6%, 24%);
+}
+
+#text {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 65%;
+}
+
+.right {
+    float: right;
+}
+
+.mainImage {
+    width: 100%;
+    height: 100%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
