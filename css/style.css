@@ -14,7 +14,7 @@
     transform: translate(-50%, -50%);
     width: 55%;
     height: 65%;
-    background: url(../images/bg-pattern-desktop.svg) no-repeat;
+    background: url(../images/bg-pattern-desktop.svg);
 }
 
 .bgDesktop {
@@ -57,18 +57,42 @@
     width: 65%;
 }
 
-#input {
+#input-container {
     border: 1px solid hsl(0, 6%, 24%);
     border-radius: 50px;
     height: 33px;
-    width: 60%;
-    margin-block-start: 20px;
-    background-color: transparent;
+    width: 100%;
 }
 
-::placeholder {
+#input {
+    border: none;
+    height: 33px;
+    width: 65%;
+    background-color: transparent;
+    text-indent: 15px;
+    outline: none;
+}
+
+#input::placeholder {
     color: hsl(0, 36%, 70%);
-    padding: 5px 0 0 20px;
+    /* padding: 5px 0 0 20px; */
+}
+
+.field {
+    position: relative;
+    width: 60%;
+    margin-block-start: 20px;
+}
+
+#icon {
+    position: absolute;
+    top: 6px;
+    right: 50px;
+    visibility: hidden;
+}
+
+.error {
+    border-color: hsl(0, 93%, 68%) !important;
 }
 
 .button {
@@ -76,11 +100,20 @@
     border: 1px;
     background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)) no-repeat;
     border-radius: 50px;
-    width: 8%;
+    width: 70px;
     height: 38px;
     position: absolute;
-    top: 76.9%;
-    left: 31%;
+    top: 0px;
+    right: -30px;
+}
+
+#error-message {
+    color: hsl(0, 93%, 68%);
+    visibility: hidden;
+    font-size: 10px;
+    text-indent: 18px;
+    margin-top: 5px;
+    font-weight: 400;
 }
 
 .arrowImage {

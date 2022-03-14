@@ -24,8 +24,14 @@
             </div>
             <p id="text">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
             <div class="field">
-                <input id="input" placeholder="Email Address"></input>
+                <div id="input-container">
+                    <input id="input" placeholder="Email Address"></input>
+                </div>
+                <img id='icon' src="images/icon-error.svg" alt="">
                 <button onclick="isEmpty()" class="button" type="button"><img class="arrowImage" src="images/icon-arrow.svg"></button>
+            </div>
+            <div id="error-message">
+                Please provide a valid email.
             </div>
 
         </div>
@@ -35,7 +41,7 @@
     </div>
     <footer>
         <p class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Annemarie Rolo</a>.
         </p>
     </footer>
 </body>
